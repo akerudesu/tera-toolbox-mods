@@ -285,7 +285,16 @@ html, body {
     overflow: hidden;
     white-space: nowrap;
 }
-.row .bar {
+/* The damage bar lives in a track that starts after the 34px class-icon cell, so
+   a small bar isn't swallowed by the icon and every bar's visible length stays
+   proportional to its value. */
+.row .track {
+    position: absolute;
+    left: 34px; right: 0; top: 0; bottom: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+.row .track .bar {
     position: absolute;
     left: 0; top: 0; bottom: 0;
     width: 0;

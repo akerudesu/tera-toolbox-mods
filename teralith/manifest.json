@@ -874,14 +874,14 @@
     "lib/meter.js": "cf74b0b80a484409b51b9040957be2f0a53ba7c5a5279b289ffde76754dc146d",
     "lib/overlay-server.js": "b7e6cb6e6793667ed9b948462d68dc5b27b1f861f6161f5ba2c170e9f3392f34",
     "lib/overlay-window.js": "cb0ab25d2098fd8635cc9554137568634df6bf817bd4bc17e6c28ba222b22043",
-    "module.json": "e8370b953dcdf23145eff28c05563858d97a481bcffb8da036ad99cf98dd2467",
+    "module.json": "8b9ae8c2fa3df7d8a2efd5c018f9fdc9540af697a1ee7a06f4ab4ba0882a8444",
     "package.json": "91c0ebe79ffabb78e13820c7ef65075e3bdc996d6c5761e6e06d7a1eafc07694",
     "settings/settings.json": {
       "hash": "bc3c8fbcc9d04cd32351a7f50cffbb542a49b1d2562717c46156aac5266d38b4",
       "overwrite": false
     },
     "tools/preview.js": "c7c63488da951481aa8e5074fd070d8c1c84d158ee46fab2f18196c5d76e67a6",
-    "web/app.js": "eae513586fa6c02f028799adbdb1f24bb188c886b8e9b27a74dc84fd48c0622d",
+    "web/app.js": "cb5ecf6292e343a041e4ded65641e8fc6850fe1d820112488a88f2b7556eb1c1",
     "web/demo.js": "a23826505738d0e48badb85ffaf775c3a52ac778d564a40cec2e0e350fcfabc2",
     "web/icons/archer.webp": "9adc54f9ca396c4c86c5a691bdcf7d0af9451e6b8e8792ca5d319a44f5f9944b",
     "web/icons/berserker.webp": "f6fe1adb8cf1fdab40c3ea80fc8ab159520f21fd8852e9bba52d71602943c5bf",
@@ -897,6 +897,6 @@
     "web/icons/valkyrie.webp": "533b81cabf7a58cac69d9f684c248e3027bf610ddb4233548f437ca0bd88a766",
     "web/icons/warrior.webp": "344c0d93ca033283557b6c8fb863fc7633233c15dda4e51297a0ef3a1123a7c8",
     "web/index.html": "a564337d3841638d110dccad5b7f8f1870e25d7c20d21ae288abd96be44ffa88",
-    "web/style.css": "92beb7c341e4e9fede69479db986f80c6d37ef79a39a4a25eb8630387c53c00b"
+    "web/style.css": "56697ed636f38c3e2d115aa4844a35edec1241d63e36b265a7aba84fdc43670f"
   }
 }

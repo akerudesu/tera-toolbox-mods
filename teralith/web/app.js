@@ -122,7 +122,8 @@
     function buildRow(e) {
         const row = document.createElement('div');
         row.className = 'row enter' + (e.isSelf ? ' self' : '');
-        const bar = document.createElement('div'); bar.className = 'bar'; row.appendChild(bar);
+        const track = document.createElement('div'); track.className = 'track';
+        const bar = document.createElement('div'); bar.className = 'bar'; track.appendChild(bar); row.appendChild(track);
         const badge = document.createElement('div'); badge.className = 'badge'; row.appendChild(badge);
         const name = makeSpan('name', ''); row.appendChild(name);
         const deaths = makeSpan('deaths', ''); row.appendChild(deaths);
