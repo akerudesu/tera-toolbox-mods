@@ -1,0 +1,25 @@
+{
+    "version": 1,
+    "data": {
+        "enabled": false,
+        "theme": "tera",
+        "autoOpenOnCombat": false,
+        "alwaysOnTop": false,
+        "overlayBounds": {
+            "x": 100,
+            "y": 100,
+            "width": 360,
+            "height": 440
+        },
+        "overlayExpandedBounds": {
+            "x": 100,
+            "y": 100,
+            "width": 760,
+            "height": 640
+        },
+        "skillDataRegion": "auto",
+        "combatGapSeconds": 8,
+        "endGapSeconds": 90,
+        "maxRows": 12
+    }
+}

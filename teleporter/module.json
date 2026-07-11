@@ -1,0 +1,16 @@
+{
+    "name": "Teleporter",
+    "author": "akerudesu",
+    "description": "Adds 'tp <place>' (village atlas) and 'tpj <name>' (Travel Journal) chat commands, e.g. 'tp alle' -> Allemantheia.",
+    "version": "1.1.0",
+    "options": {
+        "cliName": "Teleporter",
+        "guiName": "Teleporter",
+        "settingsVersion": 2,
+        "settingsFile": "config.json",
+        "settingsMigrator": "settings_migrator.js",
+        "reloadable": true
+    },
+    "servers": ["https://raw.githubusercontent.com/akerudesu/tera-toolbox-mods/main/teleporter/"],
+    "disableAutoUpdate": false
+}

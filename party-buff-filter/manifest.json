@@ -1,0 +1,11 @@
+{
+  "files": {
+    "index.js": "ee8e61e15c41d13abba4d20b6769bd7b4b3b0f65887a6ef8caa6ddb68c637be1",
+    "lib/migration.js": "9365632ad6f22a11f70bc5f133021357adf3fe9f8ca2fd5fc77d23a1f4d3c1d6",
+    "module.json": "c3ec0b080d2af2f423a404f45c71e35c89ba16bfcf8fb94ee2ecca1984ea136e",
+    "settings/settings.json": {
+      "hash": "6427d007c1f2ce5b03ffd59963d5ebe0f3acc168227de9ba456657c977f51af7",
+      "overwrite": false
+    }
+  }
+}

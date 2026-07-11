@@ -1,0 +1,13 @@
+{
+    "version": 2,
+    "data": {
+        "enabled": true,
+        "atlasSlot": null,
+        "atlasItems": [
+            181116
+        ],
+        "aliases": {},
+        "autoConfirm": true,
+        "journalSlot": null
+    }
+}

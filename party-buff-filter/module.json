@@ -1,0 +1,16 @@
+{
+    "name": "party-buff-filter",
+    "author": "akerudesu",
+    "description": "Hides selected buffs (abnormalities) from party and raid members so they don't clutter your party list. Buffs are matched by numeric abnormality id; use the in-game scan mode to discover the id of any buff you want to hide.",
+    "version": "1.0.0",
+    "options": {
+        "cliName": "PBF",
+        "guiName": "Party Buff Filter",
+        "reloadable": true,
+        "settingsVersion": 1,
+        "settingsFile": "./settings/settings.json",
+        "settingsMigrator": "./lib/migration.js"
+    },
+    "servers": ["https://raw.githubusercontent.com/akerudesu/tera-toolbox-mods/main/party-buff-filter/"],
+    "disableAutoUpdate": false
+}

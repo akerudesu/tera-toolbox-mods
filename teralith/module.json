@@ -1,0 +1,15 @@
+{
+    "name": "teralith",
+    "author": "akerudesu",
+    "version": "2.0.0",
+    "description": "A simple DPS meter.",
+    "options": {
+        "cliName": "Teralith",
+        "guiName": "Teralith",
+        "settingsVersion": 1,
+        "settingsFile": "./settings/settings.json"
+    },
+    "servers": ["https://raw.githubusercontent.com/akerudesu/tera-toolbox-mods/main/teralith/"],
+    "disableAutoUpdate": false,
+    "conflicts": []
+}

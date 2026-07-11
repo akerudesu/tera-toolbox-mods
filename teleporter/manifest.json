@@ -1,0 +1,11 @@
+{
+  "files": {
+    "config.json": {
+      "hash": "14abcdc2ce6516c4bcc596edd746e4ed7f5c87c32270a7a0a7d2139150b23aec",
+      "overwrite": false
+    },
+    "index.js": "db3379a78947e0c1e9051a696a831675a598570140abb9af8a62d3abdbe2a329",
+    "module.json": "b81550c0a7564fa9732e71337153c10433cb2fa52ec8675662ea423e5a4e7b9a",
+    "settings_migrator.js": "cd9dfd5364fd9b70b0ebd16d22412af86de3cae66bfdc467bf84c1ebbb2bbd27"
+  }
+}

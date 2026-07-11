@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Teralith</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div id="meter">
+        <div id="header">
+            <span id="boss-icon"></span>
+            <span id="boss-name">Teralith</span>
+            <button id="btn-stop" type="button" title="End &amp; save this encounter">
+                <svg viewBox="0 0 12 12"><rect class="fill" x="3" y="3" width="6" height="6" rx="1"></rect></svg>
+                <span>End</span>
+            </button>
+            <button id="btn-settings" class="wbtn" type="button" title="Settings">
+                <svg viewBox="0 0 24 24" fill-rule="evenodd">
+                    <path d="M19.14,12.94c0.04-0.3,0.06-0.61,0.06-0.94c0-0.32-0.02-0.64-0.07-0.94l2.03-1.58c0.18-0.14,0.23-0.41,0.12-0.61l-1.92-3.32c-0.12-0.22-0.37-0.29-0.59-0.22l-2.39,0.96c-0.5-0.38-1.03-0.7-1.62-0.94L14.4,2.81c-0.04-0.24-0.24-0.41-0.48-0.41h-3.84c-0.24,0-0.43,0.17-0.47,0.41L9.25,5.35C8.66,5.59,8.12,5.92,7.63,6.29L5.24,5.33c-0.22-0.08-0.47,0-0.59,0.22L2.74,8.87C2.62,9.08,2.66,9.34,2.86,9.48l2.03,1.58C4.84,11.36,4.8,11.69,4.8,12s0.02,0.64,0.07,0.94l-2.03,1.58c-0.18,0.14-0.23,0.41-0.12,0.61l1.92,3.32c0.12,0.22,0.37,0.29,0.59,0.22l2.39-0.96c0.5,0.38,1.03,0.7,1.62,0.94l0.36,2.54c0.05,0.24,0.24,0.41,0.48,0.41h3.84c0.24,0,0.44-0.17,0.47-0.41l0.36-2.54c0.59-0.24,1.13-0.56,1.62-0.94l2.39,0.96c0.22,0.08,0.47,0,0.59-0.22l1.92-3.32c0.12-0.22,0.07-0.47-0.12-0.61L19.14,12.94z M12,15.6c-1.98,0-3.6-1.62-3.6-3.6s1.62-3.6,3.6-3.6s3.6,1.62,3.6,3.6S13.98,15.6,12,15.6z"></path>
+                </svg>
+            </button>
+            <button id="btn-expand" class="wbtn" type="button" title="Expanded view">
+                <svg viewBox="0 0 12 12"><polyline id="expand-chevron" points="3,4.5 6,8 9,4.5"></polyline></svg>
+            </button>
+            <button id="btn-min" class="wbtn" type="button" title="Minimize">
+                <svg viewBox="0 0 12 12"><line x1="2.5" y1="9" x2="9.5" y2="9"></line></svg>
+            </button>
+            <button id="btn-close" class="wbtn" type="button" title="Close overlay">
+                <svg viewBox="0 0 12 12"><line x1="3" y1="3" x2="9" y2="9"></line><line x1="9" y1="3" x2="3" y2="9"></line></svg>
+            </button>
+        </div>
+
+        <div id="boss-hp">
+            <div id="boss-hp-bar"></div>
+            <span id="boss-hp-text"></span>
+        </div>
+
+        <div id="colhead" class="row">
+            <span class="badge"></span>
+            <span class="name">Name</span>
+            <span class="deaths" title="Deaths">Deaths</span>
+            <span class="crit" title="Crit rate">Crit</span>
+            <span class="main">Damage</span>
+            <span class="val">DPS</span>
+        </div>
+
+        <div id="rows"></div>
+
+        <div id="totals" class="row">
+            <span class="badge"></span>
+            <span class="name">Total</span>
+            <span class="deaths"></span>
+            <span class="crit"></span>
+            <span class="main"><span class="dval"></span></span>
+            <span class="val"></span>
+        </div>
+
+        <div id="expanded">
+            <div id="chart-panel">
+                <div id="chart-head">
+                    <span id="chart-title">Live</span>
+                    <span id="chart-sub"></span>
+                    <span id="chart-tools">
+                        <span id="chart-ctrls">
+                            <button id="chart-left" class="cbtn" type="button" title="Pan left">◀</button>
+                            <button id="chart-right" class="cbtn" type="button" title="Pan right">▶</button>
+                            <button id="chart-reset" class="cbtn" type="button" title="Reset zoom (or drag on the chart / scroll to zoom)">Reset</button>
+                        </span>
+                        <span id="panel-modes">
+                            <button id="mode-graph" class="modebtn active" type="button">Overview</button>
+                            <button id="mode-skills" class="modebtn" type="button">Abilities</button>
+                            <button id="mode-events" class="modebtn" type="button">Events</button>
+                        </span>
+                    </span>
+                </div>
+                <div id="chart-wrap"><canvas id="chart"></canvas></div>
+                <div id="legend"></div>
+                <div id="skills-view">
+                    <div id="skill-players"></div>
+                    <div id="skill-list"></div>
+                </div>
+                <div id="events-view">
+                    <div id="event-players"></div>
+                    <div id="event-list"></div>
+                </div>
+            </div>
+            <div id="history-panel">
+                <div id="history-head">
+                    <span id="history-title">History</span>
+                    <button id="btn-clear-logs" class="btn" type="button" title="Delete all saved logs">Clear</button>
+                </div>
+                <div id="history-list"></div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <span id="status">Waiting for combat...</span>
+            <span id="timer"></span>
+        </div>
+    </div>
+
+    <div id="modal" class="modal-hidden">
+        <div class="modal-box">
+            <div id="modal-msg"></div>
+            <div class="modal-btns">
+                <button id="modal-cancel" class="btn" type="button">Cancel</button>
+                <button id="modal-ok" class="btn" type="button">Delete</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="settings-modal" class="modal-hidden">
+        <div class="modal-box settings-box">
+            <div class="settings-title">Settings</div>
+            <div class="settings-body">
+                <label class="setting-row"><span>Theme</span>
+                    <select id="set-theme">
+                        <option value="tera">TERA</option>
+                        <option value="onedark">One Dark</option>
+                        <option value="dracula">Dracula</option>
+                        <option value="nord">Nord</option>
+                        <option value="catppuccin">Catppuccin</option>
+                        <option value="gruvbox">Gruvbox</option>
+                        <option value="solarized">Solarized</option>
+                        <option value="rosepine">Rose Pine</option>
+                        <option value="tokyonight">Tokyo Night</option>
+                        <option value="darkly">Darkly</option>
+                    </select>
+                </label>
+                <label class="setting-row"><span>Always on top</span><input type="checkbox" id="set-alwaysOnTop"></label>
+                <label class="setting-row"><span>Open overlay on combat</span><input type="checkbox" id="set-autoOpenOnCombat"></label>
+                <label class="setting-row"><span>Skill data region</span>
+                    <select id="set-skillDataRegion">
+                        <option value="auto">Auto</option>
+                        <option value="EU-EN">EU-EN</option>
+                        <option value="EU-FR">EU-FR</option>
+                        <option value="EU-GER">EU-GER</option>
+                        <option value="JP">JP</option>
+                        <option value="KR">KR</option>
+                        <option value="RU">RU</option>
+                        <option value="TW">TW</option>
+                    </select>
+                </label>
+                <label class="setting-row"><span>Combat gap (s)</span><input type="number" id="set-combatGapSeconds" min="1" max="60" step="1"></label>
+                <label class="setting-row"><span>End encounter gap (s)</span><input type="number" id="set-endGapSeconds" min="10" max="600" step="5"></label>
+                <label class="setting-row"><span>Max players shown</span><input type="number" id="set-maxRows" min="1" max="40" step="1"></label>
+                <div class="settings-hint" id="settings-region-hint"></div>
+            </div>
+            <div class="modal-btns"><button id="settings-close" class="btn" type="button">Done</button></div>
+        </div>
+    </div>
+    <!-- demo.js is dev-only preview data; inert unless the page is opened with ?demo=1. -->
+    <script src="/demo.js"></script>
+    <script src="/app.js"></script>
+</body>
+</html>
