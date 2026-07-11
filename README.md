@@ -10,7 +10,7 @@ into your `tera-toolbox/mods/` folder, then restart the toolbox.
 
 ---
 
-## Teleporter — `tp`, `tpj`
+## Teleporter - `tp`, `tpj`
 
 Teleport by name through the village atlas or your Travel Journal.
 
@@ -20,7 +20,7 @@ Teleport by name through the village atlas or your Travel Journal.
 | `tpj <name>` | Teleport to a Travel Journal location, e.g. `tpj home` |
 | `tp` / `tpj` | Show usage (`tpj` also lists your locations) |
 
-## Party Buff Filter — `pbf`
+## Party Buff Filter - `pbf`
 
 Hide clutter buffs from your party/raid frames. Buffs are matched by numeric id.
 
@@ -40,22 +40,8 @@ Hide clutter buffs from your party/raid frames. Buffs are matched by numeric id.
 
 Typical use: `pbf find kaia` (or `pbf scan`) to get an id, then `pbf add <id>`.
 
-## Fast Quest — `fq`
 
-Makes the `F` key actually select the single available option on quest dialogs.
-On this server some quest boxes bind `F` to a hidden cancel action, so pressing
-`F` resets the conversation instead of picking the one option — this drops that
-action so `F` selects the real button and closes the box cleanly. No
-auto-advance and no injected packets: you press `F` (or click) yourself, it just
-works now. Multi-option dialogs (a real choice, quiz answers) are left for you to
-pick with the mouse.
-
-| Command | What it does |
-|---|---|
-| `fq` | Toggle the mod on/off |
-| `fq debug` | Toggle `[fq]` packet logging in the toolbox console |
-
-## Teralith — `teralith`
+## Teralith - `teralith`
 
 A lightweight DPS meter that runs entirely inside TERA Toolbox, capturing combat through its built-in network hooks. Why? Because I simply want to avoid the hassle of setting up an external parser under Linux.
 
