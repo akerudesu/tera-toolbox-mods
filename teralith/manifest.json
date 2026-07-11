@@ -875,7 +875,6 @@
     "lib/overlay-server.js": "b7e6cb6e6793667ed9b948462d68dc5b27b1f861f6161f5ba2c170e9f3392f34",
     "lib/overlay-window.js": "cb0ab25d2098fd8635cc9554137568634df6bf817bd4bc17e6c28ba222b22043",
     "module.json": "8b9ae8c2fa3df7d8a2efd5c018f9fdc9540af697a1ee7a06f4ab4ba0882a8444",
-    "package.json": "91c0ebe79ffabb78e13820c7ef65075e3bdc996d6c5761e6e06d7a1eafc07694",
     "settings/settings.json": {
       "hash": "bc3c8fbcc9d04cd32351a7f50cffbb542a49b1d2562717c46156aac5266d38b4",
       "overwrite": false
